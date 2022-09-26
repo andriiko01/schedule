@@ -30,12 +30,6 @@ interface ISubjectItem {
   lecturer: Lecturer;
 }
 
-export interface ILesson {
-  id: number;
-  subject: ISubjectItem;
-  type: LessonType;
-}
-
 export const SUBJECTS = {
   database: {
     name: Subject.database,
@@ -70,3 +64,9 @@ export const SUBJECTS = {
     lecturer: Lecturer.softwareEngineering,
   },
 };
+
+export interface ILesson {
+  id: number;
+  subject: ISubjectItem;
+  type: LessonType;
+}

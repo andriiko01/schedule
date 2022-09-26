@@ -1,4 +1,10 @@
-import { ILesson, Lecturer, LessonType, Subject } from "../models/subject";
+import {
+  ILesson,
+  Lecturer,
+  LessonType,
+  Subject,
+  SUBJECTS,
+} from "../models/subject";
 
 export const START_DAY = new Date("2022-08-29T00:00:00");
 export const CURRENT_DATE = new Date();
@@ -24,25 +30,19 @@ export const DATA: IDay[] = [
     name: Days[0],
     numerator: [
       {
-        id: 2,
-        subject: {
-          name: Subject.english,
-          lecturer: Lecturer.english,
-        },
+        id: 3,
+        subject: SUBJECTS.english,
         type: LessonType.lecture,
       },
       {
-        id: 3,
-        subject: {
-          name: Subject.english,
-          lecturer: Lecturer.english,
-        },
+        id: 4,
+        subject: SUBJECTS.law,
         type: LessonType.lecture,
       },
     ],
     denominator: [
       {
-        id: 2,
+        id: 3,
         subject: {
           name: Subject.english,
           lecturer: Lecturer.english,
@@ -50,11 +50,8 @@ export const DATA: IDay[] = [
         type: LessonType.lecture,
       },
       {
-        id: 3,
-        subject: {
-          name: Subject.english,
-          lecturer: Lecturer.english,
-        },
+        id: 4,
+        subject: SUBJECTS.law,
         type: LessonType.lecture,
       },
     ],
@@ -64,52 +61,34 @@ export const DATA: IDay[] = [
     numerator: [
       {
         id: 2,
-        subject: {
-          name: Subject.softwareDesign,
-          lecturer: Lecturer.softwareDesign,
-        },
+        subject: SUBJECTS.softwareDesign,
         type: LessonType.lecture,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.discreteStructures,
-          lecturer: Lecturer.discreteStructures,
-        },
+        subject: SUBJECTS.discreteStructures,
         type: LessonType.lecture,
       },
       {
         id: 4,
-        subject: {
-          name: Subject.softwareEngineering,
-          lecturer: Lecturer.softwareEngineering,
-        },
+        subject: SUBJECTS.softwareEngineering,
         type: LessonType.lecture,
       },
     ],
     denominator: [
       {
         id: 2,
-        subject: {
-          name: Subject.softwareDesign,
-          lecturer: Lecturer.softwareDesign,
-        },
+        subject: SUBJECTS.softwareDesign,
         type: LessonType.lecture,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.humanMachineInterface,
-          lecturer: Lecturer.humanMachineInterface,
-        },
+        subject: SUBJECTS.humanMachineInterface,
         type: LessonType.lecture,
       },
       {
         id: 4,
-        subject: {
-          name: Subject.softwareEngineering,
-          lecturer: Lecturer.softwareEngineering,
-        },
+        subject: SUBJECTS.softwareEngineering,
         type: LessonType.lecture,
       },
     ],
@@ -119,36 +98,24 @@ export const DATA: IDay[] = [
     numerator: [
       {
         id: 2,
-        subject: {
-          name: Subject.numericalMethods,
-          lecturer: Lecturer.numericalMethods,
-        },
+        subject: SUBJECTS.numericalMethods,
         type: LessonType.lecture,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.database,
-          lecturer: Lecturer.database,
-        },
+        subject: SUBJECTS.database,
         type: LessonType.lecture,
       },
     ],
     denominator: [
       {
         id: 2,
-        subject: {
-          name: Subject.numericalMethods,
-          lecturer: Lecturer.numericalMethods,
-        },
+        subject: SUBJECTS.numericalMethods,
         type: LessonType.lecture,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.database,
-          lecturer: Lecturer.database,
-        },
+        subject: SUBJECTS.database,
         type: LessonType.lecture,
       },
     ],
@@ -158,77 +125,53 @@ export const DATA: IDay[] = [
     numerator: [
       {
         id: 2,
-        subject: {
-          name: Subject.humanMachineInterface,
-          lecturer: Lecturer.humanMachineInterface,
-        },
+        subject: SUBJECTS.humanMachineInterface,
         type: LessonType.laboratory,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.discreteStructures,
-          lecturer: Lecturer.discreteStructures,
-        },
-        type: LessonType.laboratory,
-      },
-      {
-        id: 4,
-        subject: {
-          name: Subject.softwareDesign,
-          lecturer: Lecturer.softwareDesign,
-        },
+        subject: SUBJECTS.discreteStructures,
         type: LessonType.laboratory,
       },
     ],
     denominator: [
       {
         id: 2,
-        subject: {
-          name: Subject.humanMachineInterface,
-          lecturer: Lecturer.humanMachineInterface,
-        },
+        subject: SUBJECTS.humanMachineInterface,
         type: LessonType.laboratory,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.discreteStructures,
-          lecturer: Lecturer.discreteStructures,
-        },
+        subject: SUBJECTS.discreteStructures,
+        type: LessonType.laboratory,
+      },
+      {
+        id: 4,
+        subject: SUBJECTS.softwareDesign,
         type: LessonType.laboratory,
       },
     ],
   },
   {
     name: Days[4],
-    numerator: [
+    numerator: [],
+    denominator: [
       {
         id: 2,
-        subject: {
-          name: Subject.database,
-          lecturer: Lecturer.database,
-        },
+        subject: SUBJECTS.database,
         type: LessonType.laboratory,
       },
       {
         id: 3,
-        subject: {
-          name: Subject.softwareDesign,
-          lecturer: Lecturer.softwareDesign,
-        },
+        subject: SUBJECTS.softwareDesign,
         type: LessonType.laboratory,
       },
       {
         id: 4,
-        subject: {
-          name: Subject.numericalMethods,
-          lecturer: Lecturer.numericalMethods,
-        },
+        subject: SUBJECTS.numericalMethods,
         type: LessonType.laboratory,
       },
     ],
-    denominator: [],
   },
   {
     name: Days[5],
