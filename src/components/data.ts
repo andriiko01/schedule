@@ -1,12 +1,6 @@
-import {
-  ILesson,
-  Lecturer,
-  LessonType,
-  Subject,
-  SUBJECTS,
-} from "../models/subject";
+import {ILesson, LessonType, SUBJECTS} from '../models/subject';
 
-export const START_DAY = new Date("2022-08-29T00:00:00");
+export const START_DAY = new Date('2023-02-13T00:00:00');
 export const CURRENT_DATE = new Date();
 
 export interface IDay {
@@ -30,28 +24,35 @@ export const DATA: IDay[] = [
     name: Days[0],
     numerator: [
       {
+        id: 2,
+        subject: SUBJECTS.database,
+        type: LessonType.lecture,
+      },
+      {
         id: 3,
-        subject: SUBJECTS.english,
+        subject: SUBJECTS.operatingSystems,
         type: LessonType.lecture,
       },
       {
         id: 4,
-        subject: SUBJECTS.law,
+        subject: SUBJECTS.softwareModelingAndAnalysis,
         type: LessonType.lecture,
       },
     ],
     denominator: [
       {
+        id: 2,
+        subject: SUBJECTS.database,
+        type: LessonType.lecture,
+      },
+      {
         id: 3,
-        subject: {
-          name: Subject.english,
-          lecturer: Lecturer.english,
-        },
+        subject: SUBJECTS.operatingSystems,
         type: LessonType.lecture,
       },
       {
         id: 4,
-        subject: SUBJECTS.law,
+        subject: SUBJECTS.professionalPracticeOfSoftwareEngineering,
         type: LessonType.lecture,
       },
     ],
@@ -60,35 +61,25 @@ export const DATA: IDay[] = [
     name: Days[1],
     numerator: [
       {
-        id: 2,
-        subject: SUBJECTS.softwareDesign,
-        type: LessonType.lecture,
-      },
-      {
         id: 3,
-        subject: SUBJECTS.discreteStructures,
+        subject: SUBJECTS.humanRights,
         type: LessonType.lecture,
       },
       {
-        id: 4,
-        subject: SUBJECTS.softwareEngineering,
+        id: 5,
+        subject: SUBJECTS.english,
         type: LessonType.lecture,
       },
     ],
     denominator: [
       {
-        id: 2,
-        subject: SUBJECTS.softwareDesign,
-        type: LessonType.lecture,
-      },
-      {
         id: 3,
-        subject: SUBJECTS.humanMachineInterface,
+        subject: SUBJECTS.humanRights,
         type: LessonType.lecture,
       },
       {
-        id: 4,
-        subject: SUBJECTS.softwareEngineering,
+        id: 5,
+        subject: SUBJECTS.english,
         type: LessonType.lecture,
       },
     ],
@@ -98,25 +89,25 @@ export const DATA: IDay[] = [
     numerator: [
       {
         id: 2,
-        subject: SUBJECTS.numericalMethods,
-        type: LessonType.lecture,
-      },
-      {
-        id: 3,
-        subject: SUBJECTS.database,
+        subject: SUBJECTS.java,
         type: LessonType.lecture,
       },
     ],
     denominator: [
       {
         id: 2,
-        subject: SUBJECTS.numericalMethods,
+        subject: SUBJECTS.java,
         type: LessonType.lecture,
       },
       {
         id: 3,
-        subject: SUBJECTS.database,
-        type: LessonType.lecture,
+        subject: SUBJECTS.java,
+        type: LessonType.laboratory,
+      },
+      {
+        id: 4,
+        subject: SUBJECTS.java,
+        type: LessonType.laboratory,
       },
     ],
   },
@@ -125,36 +116,25 @@ export const DATA: IDay[] = [
     numerator: [
       {
         id: 2,
-        subject: SUBJECTS.humanMachineInterface,
+        subject: SUBJECTS.database,
         type: LessonType.laboratory,
       },
       {
         id: 3,
-        subject: SUBJECTS.discreteStructures,
-        type: LessonType.laboratory,
-      },
-    ],
-    denominator: [
-      {
-        id: 2,
-        subject: SUBJECTS.humanMachineInterface,
-        type: LessonType.laboratory,
-      },
-      {
-        id: 3,
-        subject: SUBJECTS.discreteStructures,
+        subject: SUBJECTS.softwareModelingAndAnalysis,
         type: LessonType.laboratory,
       },
       {
         id: 4,
-        subject: SUBJECTS.softwareDesign,
+        subject: SUBJECTS.professionalPracticeOfSoftwareEngineering,
+        type: LessonType.laboratory,
+      },
+      {
+        id: 5,
+        subject: SUBJECTS.operatingSystems,
         type: LessonType.laboratory,
       },
     ],
-  },
-  {
-    name: Days[4],
-    numerator: [],
     denominator: [
       {
         id: 2,
@@ -163,15 +143,25 @@ export const DATA: IDay[] = [
       },
       {
         id: 3,
-        subject: SUBJECTS.softwareDesign,
+        subject: SUBJECTS.softwareModelingAndAnalysis,
         type: LessonType.laboratory,
       },
       {
         id: 4,
-        subject: SUBJECTS.numericalMethods,
+        subject: SUBJECTS.professionalPracticeOfSoftwareEngineering,
+        type: LessonType.laboratory,
+      },
+      {
+        id: 5,
+        subject: SUBJECTS.operatingSystems,
         type: LessonType.laboratory,
       },
     ],
+  },
+  {
+    name: Days[4],
+    numerator: [],
+    denominator: [],
   },
   {
     name: Days[5],

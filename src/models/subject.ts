@@ -1,28 +1,26 @@
 export enum LessonType {
-  lecture = "лекція",
-  laboratory = "лаб.р.",
+  lecture = 'лекція',
+  laboratory = 'лаб.р.',
 }
 
 export enum Subject {
-  database = "Основи теорії баз даних",
-  discreteStructures = "Дискретні структури",
-  english = "Іноземна мова",
-  humanMachineInterface = "Людино-машинний інтерфейс",
-  law = "Основи права",
-  numericalMethods = "Чисельні методи в інформатиці",
-  softwareDesign = "Конструювання програмного забезпечення",
-  softwareEngineering = "Основи програмної інженерії",
+  database = 'Бази даних',
+  operatingSystems = 'Операційні системи',
+  softwareModelingAndAnalysis = 'Моделювання та аналіз програмного забезпечення',
+  professionalPracticeOfSoftwareEngineering = 'Професійна практика програмної інженерії',
+  humanRights = 'Права людини',
+  english = 'Іноземна мова',
+  java = 'Мова програмування Java',
 }
 
 export enum Lecturer {
-  database = "Безверхий А.І.",
-  discreteStructures = "Скрипник І.А.",
-  english = "Мосієвич Л.В.",
-  humanMachineInterface = "Лимаренко Ю.О.",
-  law = "Рекотов П.В.",
-  numericalMethods = "Заяц В.І.",
-  softwareDesign = "Міхайлуца О.М.",
-  softwareEngineering = "Міхайлуца О.М.",
+  database = 'Бехверхий А.І.',
+  operatingSystems = 'Лимаренко Ю.О.',
+  softwareModelingAndAnalysis = 'Лимаренко Ю.О.',
+  professionalPracticeOfSoftwareEngineering = 'Бехверхий А.І.',
+  humanRights = 'Рекотов П.В.',
+  english = 'Мосієвич Л.В.',
+  java = 'Коломоєць Г.П.',
 }
 
 interface ISubjectItem {
@@ -35,33 +33,29 @@ export const SUBJECTS = {
     name: Subject.database,
     lecturer: Lecturer.database,
   },
-  discreteStructures: {
-    name: Subject.discreteStructures,
-    lecturer: Lecturer.discreteStructures,
+  operatingSystems: {
+    name: Subject.operatingSystems,
+    lecturer: Lecturer.operatingSystems,
+  },
+  softwareModelingAndAnalysis: {
+    name: Subject.softwareModelingAndAnalysis,
+    lecturer: Lecturer.softwareModelingAndAnalysis,
+  },
+  professionalPracticeOfSoftwareEngineering: {
+    name: Subject.professionalPracticeOfSoftwareEngineering,
+    lecturer: Lecturer.professionalPracticeOfSoftwareEngineering,
+  },
+  humanRights: {
+    name: Subject.humanRights,
+    lecturer: Lecturer.humanRights,
   },
   english: {
     name: Subject.english,
     lecturer: Lecturer.english,
   },
-  humanMachineInterface: {
-    name: Subject.humanMachineInterface,
-    lecturer: Lecturer.humanMachineInterface,
-  },
-  law: {
-    name: Subject.law,
-    lecturer: Lecturer.law,
-  },
-  numericalMethods: {
-    name: Subject.numericalMethods,
-    lecturer: Lecturer.numericalMethods,
-  },
-  softwareDesign: {
-    name: Subject.softwareDesign,
-    lecturer: Lecturer.softwareDesign,
-  },
-  softwareEngineering: {
-    name: Subject.softwareEngineering,
-    lecturer: Lecturer.softwareEngineering,
+  java: {
+    name: Subject.java,
+    lecturer: Lecturer.java,
   },
 };
 
